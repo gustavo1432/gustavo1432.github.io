@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Profissional - Gustavo</title>
+  <style>
+    /* Fundo degradê animado */
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #0f2027);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2em;
+      line-height: 1.5;
+    }
+    /* Botão com efeito hover */
+    .btn {
+      background-color: #00bfff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,191,255,0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+      margin-bottom: 3em;
+    }
+    .btn:hover {
+      background-color: #0080ff;
+      color: #ffd700;
+      box-shadow: 0 8px 20px rgba(0,128,255,0.7);
+    }
+    /* Tabela estilizada */
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 700px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      color: #eee;
+    }
+    th {
+      background-color: rgba(0, 191, 255, 0.7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    tr:hover {
+      background-color: rgba(0,191,255,0.2);
+    }
+    /* Responsividade */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .btn {
+        width: 100%;
+        padding: 15px 0;
+      }
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao Site do Gustavo</h1>
+  <p>Este é um site profissional simples, com fundo degradê animado, botões elegantes e uma tabela estilizada para mostrar informações de forma clara e bonita.</p>
+  <button class="btn" onclick="alert('Você clicou no botão!')">Clique aqui!</button>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Função</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gustavo</td>
+        <td>Desenvolvedor</td>
+        <td>Ativo</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Designer</td>
+        <td>Em férias</td>
+      </tr>
+      <tr>
+        <td>Lucas</td>
+        <td>Analista</td>
+        <td>Ativo</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
